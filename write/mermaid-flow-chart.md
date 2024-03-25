@@ -27,12 +27,28 @@
 **源码**
 
 ```
-graph TD
-  A[Christmas] -->|Get money| B(Go shopping)
-  B --> C{Let me think}
-  C -->|One| D[Laptop]
-  C -->|Two| E[iPhone]
-  C -->|Three| F[fa:fa-car Car]
+graph LR
+    A[开始学习 Rust] --> B[官方网站 & 文档]
+    B --> C[安装 Rust 环境]
+    C --> D[阅读 Rust 程序设计语言书籍]
+    D --> E[练习 Rust by Example 例子]
+    E --> F[尝试简单的 Rust 项目]
+    F --> G{是否理解 Rust 基础知识?}
+    G -->|是| H[阅读 Rust Cookbook]
+    G -->|否| D
+    H --> I[练习标准库 & 常用 crate 使用]
+    I --> J[了解常见的设计模式]
+    J --> K[尝试中等难度的 Rust 项目]
+    K --> L{是否掌握 Rust 核心特性?}
+    L -->|是| M[深入学习 Rust 底层原理]
+    L -->|否| H
+    M --> N[阅读 Rustonomicon]
+    N --> O[了解 Unsafe Rust]
+    O --> P[尝试高难度的 Rust 项目]
+    P --> Q{是否精通 Rust?}
+    Q -->|是| R[贡献 Rust 社区 & 开源项目]
+    Q -->|否| M
+    R --> S[成为 Rust 专家!🦀]
 ```
 
 **效果**
